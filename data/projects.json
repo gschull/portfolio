@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T23:26:13.022Z",
+  "updatedAt": "2026-10-07T23:26:30.436Z",
   "projects": [
     {
       "name": "ai-diff-guard",
@@ -80,7 +80,7 @@
       "featured": true,
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
     {
@@ -98,7 +98,7 @@
       "featured": true,
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
     {
@@ -117,7 +117,7 @@
       "featured": true,
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
     {
@@ -136,7 +136,7 @@
       "featured": true,
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
     {
@@ -155,7 +155,7 @@
       "featured": true,
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
     {
@@ -269,7 +269,7 @@
       "note": "Research scaffold, not a claim of profitability. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -287,7 +287,7 @@
       "note": "No live-trading or investment-performance claims. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -303,7 +303,7 @@
       ],
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -321,7 +321,7 @@
       ],
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -339,7 +339,7 @@
       ],
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -357,7 +357,7 @@
       ],
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -375,7 +375,7 @@
       ],
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -392,7 +392,7 @@
       ],
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -410,7 +410,7 @@
       ],
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -429,7 +429,7 @@
       "note": "A technical research summary only; no proprietary game code, assets, or downloads are provided. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -445,7 +445,7 @@
       ],
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -465,7 +465,7 @@
       "note": "Exploratory analysis; no investment advice or profitability claim. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -484,7 +484,7 @@
       "note": "Integration adapters are scaffolding; not a claim of live integrations or automated booking success. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "gschull",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -501,7 +501,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -517,7 +517,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -535,7 +535,7 @@
       "note": "Contribution verified in a backup codebase, not the separately held primary repository. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -552,7 +552,7 @@
       "note": "Summary limited to reviewed workbook metadata and repository structure. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -569,7 +569,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -587,7 +587,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -606,7 +606,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -624,7 +624,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -641,7 +641,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -659,7 +659,7 @@
       "note": "Detailed runtime behavior is not claimed from the reviewed project structure. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -676,7 +676,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -693,7 +693,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -710,7 +710,7 @@
       "note": "No implemented synchronization capability is claimed; reviewed material was limited. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -727,7 +727,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -745,7 +745,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -763,7 +763,7 @@
       "note": "A development and optimization project, not a claim of autonomous quality approval. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -778,7 +778,7 @@
       "note": "Available documentation does not support a more specific functionality claim. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -796,7 +796,7 @@
       "note": "Protocol compatibility and production readiness were not independently certified. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -813,7 +813,7 @@
       "note": "Summary limited to reviewed project structure. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -828,7 +828,7 @@
       "note": "Planning contribution only; no shipped functionality is claimed. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -844,7 +844,7 @@
       "note": "No operational procedures or confidential incident details are disclosed. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -863,7 +863,7 @@
       "note": "Starter implementation with extension points, not a claim of a complete deployed inventory platform. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -881,7 +881,7 @@
       "note": "Uses sample data by default; live database integration is an extension point. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -898,7 +898,7 @@
       "note": "Administrative system changes require review and appropriate authorization. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -913,7 +913,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -931,7 +931,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -949,7 +949,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -967,7 +967,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -984,7 +984,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1003,7 +1003,7 @@
       "note": "Prototype with seeded demo data, not a completed production migration. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1020,7 +1020,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1038,7 +1038,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1056,7 +1056,7 @@
       "note": "Internal financial rules and thresholds are not disclosed. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1074,7 +1074,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1092,7 +1092,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1110,7 +1110,7 @@
       "note": "Reviewed documentation describes development scaffolding rather than completed application features. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1127,7 +1127,7 @@
       "note": "Description limited to reviewed source-file and workbook structure. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1144,7 +1144,7 @@
       "note": "No firmware, device commands, or proprietary support assets are published. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1163,7 +1163,7 @@
       "note": "Discovery and migration planning, not a completed replacement application. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1180,7 +1180,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1198,7 +1198,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1215,7 +1215,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1234,7 +1234,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1253,7 +1253,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1273,7 +1273,7 @@
       "note": "Hardware interfaces and deployment details are intentionally generalized. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1290,7 +1290,7 @@
       "note": "No specific cleanup outcome or production behavior is claimed from project structure alone. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1308,7 +1308,7 @@
       "note": "Internal formulas, field mappings, binaries, and datasets are withheld. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1325,7 +1325,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1344,7 +1344,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1363,7 +1363,7 @@
       "note": "No proprietary label content, fonts, or artwork is redistributed. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1380,7 +1380,7 @@
       "note": "No DRM bypass or platform-restriction circumvention. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1396,7 +1396,7 @@
       "note": "Only the organization of the material is described; training content is not reproduced. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1413,7 +1413,7 @@
       "note": "Device addresses, network topology, access details, and findings are not disclosed. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1430,7 +1430,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1449,7 +1449,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1465,7 +1465,7 @@
       "note": "Detailed analysis methods and implemented behavior are not established by the reviewed metadata. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1483,7 +1483,7 @@
       "note": "No unverified completed features are claimed. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1500,7 +1500,7 @@
       "note": "Vendor identities, invoice data, financial values, and internal recommendations are withheld. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1518,7 +1518,7 @@
       "note": "Description limited to the reviewed project and planning structure. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1536,7 +1536,7 @@
       "note": "A report-development project; no measured performance improvements are claimed. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1553,7 +1553,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1571,7 +1571,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1590,7 +1590,7 @@
       "note": "Customer identities, domains, hosting details, and access configuration are withheld. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1607,7 +1607,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1625,7 +1625,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1643,7 +1643,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1660,7 +1660,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1679,7 +1679,7 @@
       "note": "Detailed claim rules, vendor information, and implemented behavior are not disclosed. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1697,7 +1697,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1716,7 +1716,7 @@
       "note": "It does not optimize schedules, validate feasibility, or write changes to production systems. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
@@ -1734,7 +1734,7 @@
       ],
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false,
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     },
@@ -1752,7 +1752,7 @@
       "note": "Planning summary based on repository metadata; no internal business metrics are published. Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld.",
       "owner": "stl-dev-ops",
       "visibility": "private-summary",
-      "reviewedAt": "2026-10-07T23:00:00Z",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
       "featured": false
     },
     {
