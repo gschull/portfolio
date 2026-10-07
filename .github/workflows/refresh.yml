@@ -1,0 +1,42 @@
+name: Refresh portfolio
+on:
+  schedule:
+    - cron: '23 9 * * 1'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/curation.json'
+      - 'data/private-projects.json'
+      - 'scripts/sync-projects.mjs'
+      - 'tests/**'
+      - '.github/workflows/refresh.yml'
+permissions:
+  contents: write
+concurrency:
+  group: portfolio-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test contributions and privacy boundaries
+        run: node --test tests/sync-projects.test.mjs
+      - name: Refresh public repository metadata
+        run: node scripts/sync-projects.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Commit refreshed snapshot
+        run: |
+          if git diff --quiet -- data/projects.json; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/projects.json
+          git commit -m "Refresh public project snapshot" -m "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+          git push origin HEAD:main

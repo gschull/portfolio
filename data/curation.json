@@ -1,0 +1,54 @@
+{
+  "gschull/NetMap": {
+    "category": "Desktop & networking",
+    "description": "C# WPF network-discovery application with subnet scans, traceroute analysis, live progress, cancellation, and CSV export.",
+    "tags": ["C#", ".NET 8", "WPF", "MVVM"],
+    "featured": true
+  },
+  "gschull/ai-diff-guard": {
+    "category": "Developer tooling",
+    "description": "CLI that flags off-scope changes, broad rewrites, unexplained dependency changes, and missing test updates in AI-generated diffs.",
+    "tags": ["Python", "CLI", "Git diffs", "JSON reports"],
+    "featured": true
+  },
+  "gschull/software-quality-collapse": {
+    "category": "Developer tooling",
+    "description": "Quality-gate proofs of concept combining mutation testing, dependency checks, and performance budgets across multiple ecosystems.",
+    "tags": ["Python", "Node.js", "Java", "GitHub Actions"],
+    "note": "Proof-of-concept tooling; thresholds are configurable.",
+    "featured": true
+  },
+  "gschull/kaizen": {
+    "category": "Web applications",
+    "description": "Personal-first continuous-improvement application and supporting guides for tracking small daily improvements, solo or with groups.",
+    "tags": ["JavaScript", "HTML", "CSS"]
+  },
+  "gschull/StorageScrubber": {
+    "category": "Systems automation",
+    "description": "Storage analysis and cleanup tooling with file classification, optional duplicate detection, dry-run reporting, and Recycle Bin deletion.",
+    "tags": ["Python", "CLI", "JSON reports"],
+    "note": "Review dry-run reports before cleanup."
+  },
+  "gschull/linuxbox-provision": {
+    "category": "Systems automation",
+    "description": "WSL provisioning scripts and diagnostics for setting up Linux shells, development toolchains, and Windows Terminal integration.",
+    "tags": ["PowerShell", "Shell", "WSL", "Linux"]
+  },
+  "gschull/ubuntu-setup": {
+    "category": "Systems documentation",
+    "description": "Ubuntu 24.04 ThinkPad T410 setup documentation covering system configuration, change tracking, and rollback instructions.",
+    "tags": ["Ubuntu", "Linux", "Documentation"]
+  },
+  "gschull/psyop-explorer": {
+    "category": "Research tools",
+    "description": "Exploratory narrative-scoring toolkit with a questionnaire, validated inputs, and CLI reports.",
+    "tags": ["Python", "CLI", "Research"],
+    "note": "Educational exploration, not a validated detector or definitive assessment."
+  },
+  "stl-dev-ops/stlpackingperformancereport": {
+    "category": "Operational reporting",
+    "description": "VBA-based packing-performance reporting project in the stl-dev-ops organization.",
+    "tags": ["VBA", "Reporting"],
+    "note": "Organization-owned project; gschull appears in its public contributor list."
+  }
+}

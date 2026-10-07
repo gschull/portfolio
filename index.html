@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="gschull's engineering portfolio: developer tooling, desktop applications, automation, and operational reporting.">
+  <meta name="color-scheme" content="dark light">
+  <title>gschull | Engineering portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+  <header class="shell navigation">
+    <a class="brand" href="./index.html">gschull<span class="accent"> / engineering</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#approach">Approach</a>
+      <a href="https://github.com/gschull">GitHub</a>
+    </nav>
+  </header>
+  <main class="shell">
+    <section class="hero" aria-labelledby="headline">
+      <p class="eyebrow">AUTOMATION / DEVELOPER TOOLS / PRACTICAL SOFTWARE</p>
+      <h1 id="headline">Make the repetitive<br><span class="accent">work for you.</span></h1>
+      <p class="intro">I build tools for understanding networks, improving code quality, automating systems, and turning operational data into useful reports.</p>
+      <div class="actions">
+        <a class="button primary" href="#projects">Explore the work <span aria-hidden="true">&rarr;</span></a>
+        <a class="button" href="https://github.com/gschull">View GitHub profile</a>
+      </div>
+      <ul class="stack" aria-label="Technologies represented in projects">
+        <li>C# / .NET / WPF</li><li>Python</li><li>SQL / ETL</li><li>PowerShell</li><li>JavaScript</li><li>VBA / Access</li><li>Industrial automation</li>
+      </ul>
+      <p id="portfolio-stats" class="muted"></p>
+    </section>
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE PROJECT INDEX</p><h2 id="projects-heading">Built to solve something.</h2></div>
+        <p id="freshness" class="muted">Loading repository snapshot...</p>
+      </div>
+      <p class="section-intro">Work I have contributed to, across personal projects and stl-dev-ops. Public projects link to source; private work is represented by reviewed, high-level summaries and relevant skills, without internal names or implementation details.</p>
+      <div class="filters">
+        <div class="field"><label for="search">Search projects</label><input id="search" type="search" placeholder="Try network, Python, or quality"></div>
+        <div class="field"><label for="source">Repository owner</label><select id="source"><option value="all">All owners</option><option value="personal">Personal</option><option value="organization">stl-dev-ops</option></select></div>
+        <div class="field"><label for="category">Focus area</label><select id="category"><option value="all">All focus areas</option></select></div>
+        <div class="field"><label for="visibility">Project visibility</label><select id="visibility"><option value="all">Public and private work</option><option value="public">Public source</option><option value="private-summary">Private summaries</option></select></div>
+      </div>
+      <p id="result-count" class="muted" role="status" aria-live="polite"></p>
+      <p id="load-error" class="error" role="alert" hidden></p>
+      <noscript><p>JavaScript is required for project filters. Browse <a href="https://github.com/gschull?tab=repositories">personal repositories</a> or <a href="https://github.com/orgs/stl-dev-ops/repositories">stl-dev-ops repositories</a> on GitHub.</p></noscript>
+      <div id="project-grid" class="project-grid"></div>
+      <p id="empty-state" class="empty" hidden>No projects match these filters. Try another search or focus area.</p>
+    </section>
+    <section id="approach" class="approach" aria-labelledby="approach-heading">
+      <p class="eyebrow">HOW I THINK ABOUT THE WORK</p>
+      <h2 id="approach-heading">Useful. Understandable. Repeatable.</h2>
+      <div class="principles">
+        <article><span class="accent">01 /</span><h3>Reduce friction</h3><p>Scripts, desktop tools, and small applications that make recurring tasks easier to carry out.</p></article>
+        <article><span class="accent">02 /</span><h3>Make behavior visible</h3><p>Reports, logs, risk signals, and test gates that help people see what a system is doing.</p></article>
+        <article><span class="accent">03 /</span><h3>Keep the context</h3><p>Documentation, setup guides, and explicit safety considerations alongside the implementation.</p></article>
+      </div>
+    </section>
+    <section class="contact" aria-labelledby="contact-heading"><div><p class="eyebrow">EXPLORE FURTHER</p><h2 id="contact-heading">The code tells the rest.</h2><p>Browse the source, read the documentation, or start a conversation on GitHub.</p></div><a class="button primary" href="https://github.com/gschull">Find me on GitHub &rarr;</a></section>
+  </main>
+  <footer class="shell"><p>gschull / Engineering portfolio</p><p>Verified contributions. Private work summarized; organization work attributed.</p></footer>
+  <template id="project-template">
+    <article class="project-card">
+      <div class="card-top"><span class="project-category"></span><span class="project-owner"></span></div>
+      <h3 class="project-name"></h3>
+      <p class="project-description"></p>
+      <p class="project-note muted"></p>
+      <ul class="project-tags" aria-label="Project technologies"></ul>
+      <div class="card-bottom"><span class="project-date muted"></span><a class="project-link">Source <span aria-hidden="true">&nearr;</span></a></div>
+    </article>
+  </template>
+</body>
+</html>
