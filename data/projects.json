@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T23:19:11.147Z",
+  "updatedAt": "2026-10-07T23:26:13.022Z",
   "projects": [
     {
       "name": "ai-diff-guard",
@@ -157,24 +157,6 @@
       "visibility": "private-summary",
       "reviewedAt": "2026-10-07T23:00:00Z",
       "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
-    },
-    {
-      "name": "stlpackingperformancereport",
-      "owner": "stl-dev-ops",
-      "source": "organization",
-      "visibility": "public",
-      "url": "https://github.com/stl-dev-ops/stlpackingperformancereport",
-      "description": "VBA-based packing-performance reporting project in the stl-dev-ops organization.",
-      "category": "Operational reporting",
-      "tags": [
-        "VBA",
-        "Reporting"
-      ],
-      "note": "Organization-owned project; gschull appears in its public contributor list.",
-      "featured": false,
-      "archived": false,
-      "fork": false,
-      "pushedAt": "2026-10-02T22:53:16Z"
     },
     {
       "name": "kaizen",
@@ -1772,6 +1754,22 @@
       "visibility": "private-summary",
       "reviewedAt": "2026-10-07T23:00:00Z",
       "featured": false
+    },
+    {
+      "id": "org-77",
+      "name": "Packing-performance reporting workbook",
+      "source": "organization",
+      "category": "Operational reporting",
+      "description": "A VBA-based reporting project for reviewing packing performance.",
+      "tags": [
+        "VBA",
+        "Reporting"
+      ],
+      "owner": "stl-dev-ops",
+      "visibility": "private-summary",
+      "reviewedAt": "2026-10-07T23:26:12.971Z",
+      "featured": false,
+      "note": "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."
     }
   ]
 }

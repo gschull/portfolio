@@ -6,7 +6,7 @@ Public projects link to their source. Private work is represented by purpose, re
 
 ## Contribution scope and privacy
 
-The initial review examined 23 personal and 99 organization repositories. GitHub's contributor lists identified gschull commit contributions in **99 repositories: 22 personal and 77 organization projects**. The portfolio includes **9 public projects and 90 sanitized private-project summaries**.
+The initial review examined 23 personal and 99 organization repositories. GitHub's contributor lists identified gschull commit contributions in **99 repositories: 22 personal and 77 organization projects**. The portfolio includes **8 public projects and 91 sanitized private-project summaries**.
 
 Repositories with no account-linked contribution evidence were excluded, including repositories owned by the account. Contributor evidence can miss work committed under unlinked identities or non-commit work; exclusions are conservative, not a claim that no work occurred.
 
