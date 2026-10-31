@@ -1,0 +1,56 @@
+name: "Project inquiry (public)"
+description: "Request a scoped SQL, workflow automation, or Microsoft 365 project. GitHub login required; everything submitted here is public."
+title: "[Project inquiry] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Before you submit
+        GitHub issues are **public**. Use only high-level, non-confidential descriptions.
+        Do not include passwords, API keys, private URLs, customer data, personal contact information, or proprietary source code.
+        A private channel can be established later if the project is a fit.
+  - type: dropdown
+    id: service
+    attributes:
+      label: What kind of help do you need?
+      options:
+        - SQL or reporting
+        - Business process automation
+        - Microsoft 365 or PowerShell automation
+        - Integration / not sure yet
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Business problem (high-level)
+      description: "Describe what is manual, broken, slow, or difficult. Avoid sensitive specifics."
+      placeholder: "We manually combine several reports each week and want a reliable repeatable process."
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome / acceptance criteria
+      description: "What should the finished project accomplish?"
+      placeholder: "Produce a verified report on a schedule, with logging and a recoverable failure path."
+    validations:
+      required: true
+  - type: dropdown
+    id: timing
+    attributes:
+      label: Preferred timeline
+      options:
+        - Flexible
+        - Within 2 weeks
+        - Within 1 month
+        - More than 1 month
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Non-sensitive constraints (optional)
+      description: "Example: remote work, required platforms, or preferred handoff format. Do not include private infrastructure details."
+    validations:
+      required: false
