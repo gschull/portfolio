@@ -4,6 +4,16 @@ A responsive engineering portfolio covering **verified contributions** to person
 
 Public projects link to their source. Private work is represented by purpose, relevant skills, and carefully generalized descriptions, without internal project names, code, private links, credentials, customer information, or infrastructure details.
 
+## Client inquiries and service offerings
+
+The homepage includes three indicative starting-price service offers for scoped remote engineering projects. These prices are not guaranteed quotes: access, licensing, project boundaries, acceptance tests, support, and scheduling must be agreed separately. Do not publish unverified performance metrics or customer claims.
+
+The primary contact call to action uses `mailto:glschull@gmail.com` (the address approved by the portfolio owner) with a prefilled project inquiry subject and outline. It opens the visitor's configured email client; no server-side email delivery is provided, and it may not work for visitors who have no mail handler. The address is publicly visible, so it can attract unsolicited messages.
+
+[Open a public project inquiry](https://github.com/gschull/portfolio/issues/new?template=project-inquiry.yml) provides an optional structured GitHub issue form in `.github/ISSUE_TEMPLATE/project-inquiry.yml`. This requires GitHub login and posts **publicly**. Do not request passwords, internal URLs, customer information, personal contact details, or proprietary materials in the issue. Use email or another separately agreed private channel before exchanging confidential specifications.
+
+A future upgrade could replace `mailto:` with a private, spam-protected lead form and consented retention, if desired.
+
 ## Contribution scope and privacy
 
 The initial review examined 23 personal and 99 organization repositories. GitHub's contributor lists identified gschull commit contributions in **99 repositories: 22 personal and 77 organization projects**. The portfolio includes **8 public projects and 91 sanitized private-project summaries**.

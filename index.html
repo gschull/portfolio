@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="gschull's engineering portfolio: developer tooling, desktop applications, automation, and operational reporting.">
+  <meta name="description" content="Remote SQL reporting, business automation, Microsoft 365 scripting, and systems integrations. Explore verified engineering contributions and request scoped project work.">
+  <link rel="canonical" href="https://gschull.github.io/portfolio/">
+  <meta property="og:title" content="gschull | Automation & integration engineering">
+  <meta property="og:description" content="Practical SQL, workflow, and Microsoft 365 automation for growing teams.">
   <meta name="color-scheme" content="dark light">
-  <title>gschull | Engineering portfolio</title>
+  <title>gschull | Automation & integration engineering</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
 </head>
@@ -14,24 +17,74 @@
   <header class="shell navigation">
     <a class="brand" href="./index.html">gschull<span class="accent"> / engineering</span></a>
     <nav aria-label="Main navigation">
+      <a href="#services">Services</a>
       <a href="#projects">Projects</a>
       <a href="#approach">Approach</a>
-      <a href="https://github.com/gschull">GitHub</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
   <main class="shell">
     <section class="hero" aria-labelledby="headline">
-      <p class="eyebrow">AUTOMATION / DEVELOPER TOOLS / PRACTICAL SOFTWARE</p>
-      <h1 id="headline">Make the repetitive<br><span class="accent">work for you.</span></h1>
-      <p class="intro">I build tools for understanding networks, improving code quality, automating systems, and turning operational data into useful reports.</p>
+      <p class="eyebrow">REMOTE ENGINEERING / SQL / WORKFLOW AUTOMATION</p>
+      <h1 id="headline">Less manual work.<br><span class="accent">More reliable systems.</span></h1>
+      <p class="intro">I help teams connect existing tools, fix reporting bottlenecks, and automate repeatable processes using SQL Server, C#, Python, PowerShell, and Microsoft 365.</p>
       <div class="actions">
-        <a class="button primary" href="#projects">Explore the work <span aria-hidden="true">&rarr;</span></a>
-        <a class="button" href="https://github.com/gschull">View GitHub profile</a>
+        <a class="button primary" href="#services">Explore services <span aria-hidden="true">&rarr;</span></a>
+        <a class="button" href="#contact">Discuss a project</a>
+        <a class="button" href="#projects">View engineering work</a>
       </div>
       <ul class="stack" aria-label="Technologies represented in projects">
         <li>C# / .NET / WPF</li><li>Python</li><li>SQL / ETL</li><li>PowerShell</li><li>JavaScript</li><li>VBA / Access</li><li>Industrial automation</li>
       </ul>
       <p id="portfolio-stats" class="muted"></p>
+    </section>
+<section id="services" class="services" aria-labelledby="services-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">SCOPED REMOTE CONTRACT PROJECTS</p><h2 id="services-heading">Build something useful. Keep it maintainable.</h2></div>
+      </div>
+      <p class="section-intro">Focused engineering engagements for teams that need existing business systems to work better together. Each project begins with a defined scope, acceptance criteria, and an agreed handoff.</p>
+      <div class="service-grid">
+        <article class="service-card">
+          <p class="eyebrow">01 / DATA</p>
+          <h3>SQL &amp; reporting repair</h3>
+          <p>Investigate a broken or slow report, reconcile data sources, or correct a focused SQL/ETL workflow.</p>
+          <p class="service-price">From $950 <span>per scoped project</span></p>
+          <a class="service-link" href="#contact">Request a reporting estimate &rarr;</a>
+        </article>
+        <article class="service-card">
+          <p class="eyebrow">02 / AUTOMATION</p>
+          <h3>Business workflow automation</h3>
+          <p>Automate one repetitive process with practical scripting, API integration, logging, and documented recovery behavior.</p>
+          <p class="service-price">From $1,500 <span>per scoped project</span></p>
+          <a class="service-link" href="#contact">Request an automation estimate &rarr;</a>
+        </article>
+        <article class="service-card">
+          <p class="eyebrow">03 / MICROSOFT 365</p>
+          <h3>Admin &amp; systems automation</h3>
+          <p>Streamline a specific Microsoft 365, PowerShell, or systems-administration task with documented least-privilege access.</p>
+          <p class="service-price">From $1,250 <span>per scoped project</span></p>
+          <a class="service-link" href="#contact">Request an M365 estimate &rarr;</a>
+        </article>
+      </div>
+      <p class="service-disclaimer">Prices are indicative starting points for narrow, well-defined deliverables—not fixed quotes. Scope, access, licensing, change requests, ongoing support, and delivery schedule are agreed before work begins.</p>
+      <div class="engagement">
+        <h3>How engagements work</h3>
+        <ol>
+          <li><strong>Describe the problem.</strong> Provide a high-level goal, systems involved, and desired outcome.</li>
+          <li><strong>Approve a scope.</strong> Agree on deliverables, exclusions, acceptance tests, schedule, and cost.</li>
+          <li><strong>Review and hand off.</strong> Validate the result, document operation and recovery, and close with a handoff.</li>
+        </ol>
+      </div>
+    </section>
+    <section id="proof" aria-labelledby="proof-heading">
+      <p class="eyebrow">RELEVANT CONTRIBUTED WORK</p>
+      <h2 id="proof-heading">Examples from real engineering projects.</h2>
+      <p class="section-intro">Representative contributions, including deliberately generalized private-work summaries. These are not claims of sole authorship, measured customer savings, or permission to share proprietary implementations.</p>
+      <div class="proof-grid">
+        <article class="proof-card"><h3>Maintenance work-order ETL</h3><p>Contributed to a C# integration that incrementally imports work orders from an external API into SQL Server, including backfill and enrichment workflows.</p><p class="muted">C# / SQL Server / ETL / APIs · Reviewed private-work summary</p></article>
+        <article class="proof-card"><h3>Production traceability app</h3><p>Contributed to a Microsoft Access application supporting traceability in production rewind and spooling operations.</p><p class="muted">Access / VBA / SQL · Reviewed private-work summary</p></article>
+        <article class="proof-card"><h3>Network discovery desktop app</h3><p>A C# WPF application featuring subnet discovery, traceroute analysis, progress reporting, cancellation, and CSV export.</p><p class="muted">C# / .NET / WPF · Public source</p><a href="https://github.com/gschull/NetMap">Browse NetMap source &rarr;</a></article>
+      </div>
     </section>
     <section id="projects" aria-labelledby="projects-heading">
       <div class="section-heading">
@@ -60,7 +113,19 @@
         <article><span class="accent">03 /</span><h3>Keep the context</h3><p>Documentation, setup guides, and explicit safety considerations alongside the implementation.</p></article>
       </div>
     </section>
-    <section class="contact" aria-labelledby="contact-heading"><div><p class="eyebrow">EXPLORE FURTHER</p><h2 id="contact-heading">The code tells the rest.</h2><p>Browse the source, read the documentation, or start a conversation on GitHub.</p></div><a class="button primary" href="https://github.com/gschull">Find me on GitHub &rarr;</a></section>
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div>
+        <p class="eyebrow">PROJECT INQUIRIES</p>
+        <h2 id="contact-heading">Have a process that needs fixing?</h2>
+        <p>Tell me what you want to automate, integrate, or improve. Email is the easiest way to discuss an estimate; GitHub also offers a structured project-inquiry form.</p>
+        <p class="contact-caution"><strong>GitHub privacy:</strong> Issues are <strong>public</strong> and require a GitHub account. Don't include credentials, internal URLs, customer data, or proprietary code in a public issue.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="button primary" href="mailto:glschull@gmail.com?subject=Project%20inquiry%20-%20automation%20and%20integration&amp;body=Hi%20Garrett%2C%0A%0AI'd%20like%20to%20discuss%20a%20potential%20project.%0A%0ABusiness%20goal%3A%0A%0ASystems%20involved%20(high%20level)%3A%0A%0APreferred%20timeline%3A%0A%0AThank%20you.">Email me about a project &rarr;</a>
+        <a class="button" href="https://github.com/gschull/portfolio/issues/new?template=project-inquiry.yml">Use the GitHub inquiry form</a>
+        <a href="mailto:glschull@gmail.com" aria-label="Email Garrett at glschull@gmail.com">glschull@gmail.com</a>
+      </div>
+    </section>
   </main>
   <footer class="shell"><p>gschull / Engineering portfolio</p><p>Verified contributions. Private work summarized; organization work attributed.</p></footer>
   <template id="project-template">
