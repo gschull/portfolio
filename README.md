@@ -4,6 +4,14 @@ A responsive engineering portfolio covering **verified contributions** to person
 
 Public projects link to their source. Private work is represented by purpose, relevant skills, and carefully generalized descriptions, without internal project names, code, private links, credentials, customer information, or infrastructure details.
 
+## Client inquiries and service offerings
+
+The homepage includes three indicative starting-price service offers for scoped remote engineering projects. These prices are not guaranteed quotes: access, licensing, project boundaries, acceptance tests, support, and scheduling must be agreed separately. Do not publish unverified performance metrics or customer claims.
+
+[Open a public project inquiry](https://github.com/gschull/portfolio/issues/new?template=project-inquiry.yml). This uses the GitHub issue form under `.github/ISSUE_TEMPLATE/project-inquiry.yml`. It requires the prospect to sign into GitHub and posts **publicly**. It is an interim contact channel, not a confidential intake system. Never request passwords, internal URLs, customer information, or proprietary details in the issue. Establish a private channel before exchanging sensitive specifications.
+
+For better conversion, a future revision should provide a dedicated private contact method with anti-spam protection, delivery verification, and consented record retention. Do not add a personal email or unaudited external form without approval.
+
 ## Contribution scope and privacy
 
 The initial review examined 23 personal and 99 organization repositories. GitHub's contributor lists identified gschull commit contributions in **99 repositories: 22 personal and 77 organization projects**. The portfolio includes **8 public projects and 91 sanitized private-project summaries**.
