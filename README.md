@@ -8,9 +8,11 @@ Public projects link to their source. Private work is represented by purpose, re
 
 The homepage includes three indicative starting-price service offers for scoped remote engineering projects. These prices are not guaranteed quotes: access, licensing, project boundaries, acceptance tests, support, and scheduling must be agreed separately. Do not publish unverified performance metrics or customer claims.
 
-[Open a public project inquiry](https://github.com/gschull/portfolio/issues/new?template=project-inquiry.yml). This uses the GitHub issue form under `.github/ISSUE_TEMPLATE/project-inquiry.yml`. It requires the prospect to sign into GitHub and posts **publicly**. It is an interim contact channel, not a confidential intake system. Never request passwords, internal URLs, customer information, or proprietary details in the issue. Establish a private channel before exchanging sensitive specifications.
+The primary contact call to action uses `mailto:glschull@gmail.com` (the address approved by the portfolio owner) with a prefilled project inquiry subject and outline. It opens the visitor's configured email client; no server-side email delivery is provided, and it may not work for visitors who have no mail handler. The address is publicly visible, so it can attract unsolicited messages.
 
-For better conversion, a future revision should provide a dedicated private contact method with anti-spam protection, delivery verification, and consented record retention. Do not add a personal email or unaudited external form without approval.
+[Open a public project inquiry](https://github.com/gschull/portfolio/issues/new?template=project-inquiry.yml) provides an optional structured GitHub issue form in `.github/ISSUE_TEMPLATE/project-inquiry.yml`. This requires GitHub login and posts **publicly**. Do not request passwords, internal URLs, customer information, personal contact details, or proprietary materials in the issue. Use email or another separately agreed private channel before exchanging confidential specifications.
+
+A future upgrade could replace `mailto:` with a private, spam-protected lead form and consented retention, if desired.
 
 ## Contribution scope and privacy
 
