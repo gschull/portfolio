@@ -5,6 +5,8 @@ on:
       - 'index.html'
       - 'lead-form.mjs'
       - 'tests/lead-form.test.mjs'
+      - 'tests/conversion.test.mjs'
+      - 'styles.css'
       - 'data/lead-config.json'
       - '.github/workflows/check-lead-form.yml'
   push:
@@ -25,4 +27,4 @@ jobs:
         with:
           node-version: '22'
       - name: Run client form tests
-        run: node --test tests/lead-form.test.mjs
+        run: node --test tests/lead-form.test.mjs tests/conversion.test.mjs

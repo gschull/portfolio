@@ -49,6 +49,10 @@ async function initialize(){
  let challengeToken="";
  let turnstile;
  shell.hidden=false; // Turnstile must render into a measurable visible element.
+ const assessmentCta=document.querySelector("#assessment-cta");
+ const diagnosticCta=document.querySelector("#diagnostic-cta");
+ for(const link of [assessmentCta,diagnosticCta]){ if(link)link.href="#project-inquiry"; }
+
  try{
   turnstile=await loadTurnstile();
   widgetId=turnstile.render("#lead-turnstile",{
@@ -57,7 +61,12 @@ async function initialize(){
    "expired-callback":()=>{challengeToken="";},
    "error-callback":()=>{challengeToken="";status.textContent="Verification unavailable. Please use email.";}
   });
- }catch{shell.hidden=true;return}
+ }catch{
+  shell.hidden=true;
+  if(assessmentCta)assessmentCta.href="mailto:glschull@gmail.com?subject=Project%20assessment%20inquiry";
+  if(diagnosticCta)diagnosticCta.href="mailto:glschull@gmail.com?subject=SQL%20and%20Automation%20Diagnostic";
+  return;
+ }
  form.addEventListener("submit",async e=>{
   e.preventDefault();
   if(!form.reportValidity())return;

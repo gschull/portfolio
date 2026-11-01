@@ -111,3 +111,16 @@ footer { display: flex; justify-content: space-between; gap: 1rem; border-top: 1
 .lead-status[data-state="success"] { color: var(--accent); }
 .lead-form button:disabled { opacity: .6; cursor: progress; }
 @media(max-width:620px) { .lead-form-grid { grid-template-columns: 1fr; } .lead-actions { flex-direction: column; align-items: stretch; } .lead-actions .button { width: 100%; } }
+
+/* Conversion-first assessment offer. */
+.diagnostic { padding: 1.8rem 0 1rem; }
+.diagnostic-panel { display: grid; grid-template-columns: minmax(0,2fr) minmax(230px,1fr); gap: 2rem; background:var(--panel);border:1px solid var(--line);border-radius:.7rem;padding:clamp(1.1rem,3vw,2rem); }
+.diagnostic-panel h3 { font-size:1.5rem; margin:.2rem 0; }
+.diagnostic-panel p { color:var(--muted); }
+.diagnostic-panel strong { color:var(--text); }
+.diagnostic-price { font-size:clamp(2rem,4vw,3rem);font-weight:800;color:var(--accent)!important;margin:0; }
+.diagnostic-aside { display:flex;flex-direction:column;justify-content:center;gap:.5rem; }
+.diagnostic-aside .button { text-align:center; }
+.case-detail { font-size:.85rem; }
+.case-detail strong { color:var(--text); }
+@media(max-width:620px){.diagnostic-panel{grid-template-columns:1fr;gap:1rem}.diagnostic-aside .button{width:100%}}
