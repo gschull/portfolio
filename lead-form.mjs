@@ -48,6 +48,7 @@ async function initialize(){
  let widgetId=null;
  let challengeToken="";
  let turnstile;
+ shell.hidden=false; // Turnstile must render into a measurable visible element.
  try{
   turnstile=await loadTurnstile();
   widgetId=turnstile.render("#lead-turnstile",{
@@ -56,8 +57,7 @@ async function initialize(){
    "expired-callback":()=>{challengeToken="";},
    "error-callback":()=>{challengeToken="";status.textContent="Verification unavailable. Please use email.";}
   });
- }catch{return}
- shell.hidden=false;
+ }catch{shell.hidden=true;return}
  form.addEventListener("submit",async e=>{
   e.preventDefault();
   if(!form.reportValidity())return;
