@@ -6,6 +6,7 @@ on:
       - 'index.html'
       - 'styles.css'
       - 'app.js'
+      - 'scripts/build_campaign_media.py'
       - 'data/projects.json'
       - '.github/workflows/deploy.yml'
   workflow_run:
@@ -32,11 +33,22 @@ jobs:
         with:
           ref: main
       - uses: actions/configure-pages@v5
-      - name: Assemble public website only
+      - name: Install media generator
         run: |
-          mkdir -p _site/data
+          python3 -m pip install --user "Pillow>=10,<13"
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+          fi
+      - name: Assemble public website and original campaign creative
+        run: |
+          mkdir -p _site/data _site/media
           cp index.html styles.css app.js _site/
           cp data/projects.json _site/data/
+          python3 scripts/build_campaign_media.py --out _site/media
+          test -s _site/media/launch-instagram.jpg
+          test -s _site/media/launch-pinterest.jpg
+          test -s _site/media/launch-tiktok.jpg
+          test -s _site/media/launch-short.mp4
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
