@@ -91,3 +91,23 @@ footer { display: flex; justify-content: space-between; gap: 1rem; border-top: 1
   .contact-actions { width: 100%; }
   .contact-actions .button { text-align: center; }
 }
+
+
+/* v0.3 client-facing private lead intake. Hidden unless secure API is configured. */
+.lead-section { border-top: 1px solid var(--line); padding-block: 2rem 3rem; }
+.lead-form { max-width: 860px; background: var(--panel); border: 1px solid var(--line); padding: clamp(1rem,3vw,2rem); border-radius: .85rem; display: grid; gap: 1.1rem; }
+.lead-form-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.lead-form label { display: flex; flex-direction: column; gap: .35rem; color: var(--text); font-size: .9rem; font-weight: 600; }
+.lead-form input:not([type="checkbox"]),.lead-form select,.lead-form textarea { width: 100%; min-width: 0; box-sizing: border-box; background: var(--bg); border: 1px solid var(--line); color: var(--text); font: inherit; padding: .8rem; border-radius: .35rem; }
+.lead-form input:focus-visible,.lead-form select:focus-visible,.lead-form textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.lead-form textarea { resize: vertical; }
+.lead-consent { display: flex !important; flex-direction: row !important; align-items: flex-start; gap: .75rem !important; font-size: .84rem !important; color: var(--muted) !important; font-weight: 400 !important; }
+.lead-consent input { width: 1.1rem; height: 1.1rem; flex-shrink: 0; accent-color: var(--accent); }
+.lead-honeypot { position: absolute; left: -10000px; opacity: 0; height: 0; overflow: hidden; }
+.lead-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.lead-actions .muted { margin: 0; font-size: .82rem; }
+.lead-status { min-height: 1.4rem; margin: 0; font-size: .9rem; }
+.lead-status[data-state="error"] { color: #ffcfbe; }
+.lead-status[data-state="success"] { color: var(--accent); }
+.lead-form button:disabled { opacity: .6; cursor: progress; }
+@media(max-width:620px) { .lead-form-grid { grid-template-columns: 1fr; } .lead-actions { flex-direction: column; align-items: stretch; } .lead-actions .button { width: 100%; } }

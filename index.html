@@ -11,6 +11,7 @@
   <title>gschull | Automation & integration engineering</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
+  <script src="./lead-form.mjs" type="module"></script>
   <!-- Metricool: aggregate site-visit analytics (cookie-free, per provider). -->
   <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"eec6bcff2ac356f44f939aefa51b7c76"})});</script>
 </head>
@@ -127,6 +128,49 @@
         <a class="button" href="https://github.com/gschull/portfolio/issues/new?template=project-inquiry.yml">Use the GitHub inquiry form</a>
         <a href="mailto:glschull@gmail.com" aria-label="Email Garrett at glschull@gmail.com">glschull@gmail.com</a>
       </div>
+    </section>
+
+    <!-- Private lead intake is enabled only when the Worker URL & Turnstile site key are deployed. -->
+    <section id="project-inquiry" class="lead-section" hidden aria-labelledby="lead-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PRIVATE PROJECT REQUEST</p>
+          <h2 id="lead-heading">Tell me what your business needs.</h2>
+          <p class="section-intro">Describe the problem, not sensitive system details. I'll use the information only to respond to your inquiry.</p>
+        </div>
+      </div>
+      <form id="lead-form" class="lead-form" novalidate>
+        <div class="lead-form-grid">
+          <label>Your name <span aria-hidden="true">*</span><input name="name" autocomplete="name" minlength="2" maxlength="120" required></label>
+          <label>Work email <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" maxlength="255" required></label>
+          <label>Business or organization (optional)<input name="organization" autocomplete="organization" maxlength="160"></label>
+          <label>What do you need? <span aria-hidden="true">*</span>
+            <select name="service" required>
+              <option value="">Choose a service</option>
+              <option value="sql-reporting">SQL Server &amp; reporting</option>
+              <option value="workflow-automation">Workflow automation</option>
+              <option value="systems-integration">System / API integration</option>
+              <option value="m365-powershell">Microsoft 365 / PowerShell</option>
+              <option value="custom-development">Custom C# / Python development</option>
+              <option value="other">Something else</option>
+            </select>
+          </label>
+        </div>
+        <label>What would success look like? <span aria-hidden="true">*</span>
+          <textarea name="message" rows="6" minlength="30" maxlength="3000" required
+            placeholder="High-level goal, systems involved, and preferred timeline. No passwords, client records or internal URLs."></textarea>
+        </label>
+        <div class="lead-honeypot" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <label class="lead-consent"><input type="checkbox" name="consent" required>
+          <span>I agree to be contacted about this project request. Do not include confidential or regulated information.</span>
+        </label>
+        <div id="lead-turnstile" class="lead-verification" aria-label="Anti-spam verification"></div>
+        <div class="lead-actions">
+          <button class="button primary" type="submit" id="lead-send">Send private inquiry</button>
+          <p class="muted">Prefer email? <a href="mailto:glschull@gmail.com">Contact me directly.</a></p>
+        </div>
+        <p id="lead-status" class="lead-status" role="status" aria-live="polite"></p>
+      </form>
     </section>
   </main>
   <footer class="shell"><p>gschull / Engineering portfolio</p><p>Verified contributions. Private work summarized; organization work attributed.</p><p>Anonymous, aggregate site-visit analytics provided by Metricool; no tracking cookies.</p></footer>

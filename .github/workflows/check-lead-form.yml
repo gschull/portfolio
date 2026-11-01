@@ -1,0 +1,28 @@
+name: Verify lead form
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'lead-form.mjs'
+      - 'tests/lead-form.test.mjs'
+      - 'data/lead-config.json'
+      - '.github/workflows/check-lead-form.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'lead-form.mjs'
+      - 'tests/lead-form.test.mjs'
+      - 'data/lead-config.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run client form tests
+        run: node --test tests/lead-form.test.mjs
