@@ -126,10 +126,6 @@ def main():
         draw_art(720,1280,headline=head,subtitle=sub,callout=foot,path=path)
         slide_paths.append(path)
     make_short(slide_paths,o/"launch-short.mp4")
-    # YouTube cover image is a genuine rendered thumbnail, not a generated person.
-    draw_art(1280,720,headline=["Automate the", "right work."],
-             subtitle=["SQL  /  APIs  /  Microsoft 365"],
-             callout="Remote engineering",path=o/"launch-youtube-thumb.jpg")
     for file in sorted(o.iterdir()):
         print(file.name,file.stat().st_size)
 
