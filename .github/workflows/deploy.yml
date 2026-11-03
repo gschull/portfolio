@@ -7,6 +7,7 @@ on:
       - 'styles.css'
       - 'app.js'
       - 'lead-form.mjs'
+      - 'analytics.mjs'
       - 'data/lead-config.json'
       - 'scripts/build_campaign_media.py'
       - 'data/projects.json'
@@ -44,7 +45,7 @@ jobs:
       - name: Assemble public website and original campaign creative
         run: |
           mkdir -p _site/data _site/media
-          cp index.html styles.css app.js lead-form.mjs _site/
+          cp index.html styles.css app.js lead-form.mjs analytics.mjs _site/
           cp data/projects.json data/lead-config.json _site/data/
           python3 scripts/build_campaign_media.py --out _site/media
           test -s _site/media/launch-instagram.jpg
