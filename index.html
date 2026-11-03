@@ -68,10 +68,10 @@
       </div>
       <form id="lead-form" class="lead-form" novalidate>
         <div class="lead-form-grid">
-          <label>Your name <span aria-hidden="true">*</span><input name="name" autocomplete="name" minlength="2" maxlength="120" required></label>
-          <label>Work email <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" maxlength="255" required></label>
-          <label>Business or organization (optional)<input name="organization" autocomplete="organization" maxlength="160"></label>
-          <label>What do you need? <span aria-hidden="true">*</span>
+          <label><span class="lead-label">Your name <span class="lead-required" aria-hidden="true">*</span></span><input name="name" autocomplete="name" minlength="2" maxlength="120" required></label>
+          <label><span class="lead-label">Work email <span class="lead-required" aria-hidden="true">*</span></span><input name="email" type="email" autocomplete="email" maxlength="255" required></label>
+          <label><span class="lead-label">Business or organization <span class="lead-optional">(optional)</span></span><input name="organization" autocomplete="organization" maxlength="160"></label>
+          <label><span class="lead-label">What do you need? <span class="lead-required" aria-hidden="true">*</span></span>
             <select name="service" required>
               <option value="">Choose a service</option>
               <option value="sql-reporting">SQL Server &amp; reporting</option>
@@ -83,7 +83,7 @@
             </select>
           </label>
         </div>
-        <label>What would success look like? <span aria-hidden="true">*</span>
+        <label><span class="lead-label">What would success look like? <span class="lead-required" aria-hidden="true">*</span></span>
           <textarea name="message" rows="6" minlength="30" maxlength="3000" required
             placeholder="High-level goal, systems involved, and preferred timeline. No passwords, client records or internal URLs."></textarea>
         </label>
