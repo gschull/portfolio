@@ -4,6 +4,8 @@ on:
     paths:
       - 'index.html'
       - 'lead-form.mjs'
+      - 'analytics.mjs'
+      - 'tests/analytics.test.mjs'
       - 'tests/lead-form.test.mjs'
       - 'tests/conversion.test.mjs'
       - 'styles.css'
@@ -27,4 +29,4 @@ jobs:
         with:
           node-version: '22'
       - name: Run client form tests
-        run: node --test tests/lead-form.test.mjs tests/conversion.test.mjs
+        run: node --test tests/lead-form.test.mjs tests/conversion.test.mjs tests/analytics.test.mjs

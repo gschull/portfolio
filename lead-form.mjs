@@ -71,6 +71,7 @@ async function initialize(){
   e.preventDefault();
   if(!form.reportValidity())return;
   if(!challengeToken){status.dataset.state="error";status.textContent="Complete the anti-spam verification first.";return;}
+  window.dispatchEvent(new CustomEvent("portfolio-analytics",{detail:"inquiry_attempt"}));
   submit.disabled=true;
   status.textContent="Submitting your request...";
   status.dataset.state="";
@@ -86,9 +87,11 @@ async function initialize(){
    form.reset();
    status.dataset.state="success";
    status.textContent="Inquiry received. I will reply to the email address provided.";
+   window.dispatchEvent(new CustomEvent("portfolio-analytics",{detail:"generate_lead"}));
   }catch(err){
    status.dataset.state="error";
    status.textContent=(err.message||"Submission failed")+". Please try again or use the email link.";
+   window.dispatchEvent(new CustomEvent("portfolio-analytics",{detail:"inquiry_error"}));
   }finally{
    submit.disabled=false;challengeToken="";
    if(turnstile&&widgetId!==null)turnstile.reset(widgetId);
