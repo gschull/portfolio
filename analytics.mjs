@@ -67,7 +67,7 @@ export function setup(win, doc) {
     if(link.id === "diagnostic-cta") emit("diagnostic_click");
     if((link.getAttribute("href")||"").startsWith("mailto:")) emit("email_click");
   });
-  doc.querySelector("#lead-form")?.addEventListener("focusin",()=>{if(!started){started=true;emit("form_start");}});
+  doc.querySelector("#lead-form")?.addEventListener("focusin",()=>{if(active&&!started){started=true;emit("form_start");}});
   win.addEventListener("portfolio-analytics",e=>emit(e.detail));
 }
 if (typeof window !== "undefined" && typeof document !== "undefined") setup(window,document);
