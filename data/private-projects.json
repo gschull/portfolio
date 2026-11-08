@@ -1200,6 +1200,86 @@
         "VBA",
         "Reporting"
       ]
+    },
+    {
+      "id": "automatic-b40d21ea4abd472398bc110a6b20314c",
+      "name": "Client acquisition and CRM toolkit",
+      "source": "personal",
+      "category": "Workflow automation",
+      "description": "A local-first toolkit for tracking prospects and inquiries, planning outreach, and coordinating campaign activity.",
+      "tags": [
+        "Python",
+        "CRM",
+        "Automation"
+      ]
+    },
+    {
+      "id": "automatic-cac57bed9c214e01ba735cc1bc031bf2",
+      "name": "Community voting and feedback platform",
+      "source": "personal",
+      "category": "Web applications",
+      "description": "A self-hosted application for managing voting campaigns, gathering community suggestions, and viewing private results.",
+      "tags": [
+        "JavaScript",
+        "Web applications"
+      ]
+    },
+    {
+      "id": "automatic-e50d62ada6464dec83a3a6cc5355335c",
+      "name": "Attendance intake and review workflow",
+      "source": "organization",
+      "category": "Workflow automation",
+      "description": "A workflow for collecting attendance information and supporting audited review and manager notifications.",
+      "tags": [
+        "PowerShell",
+        "Workflow automation"
+      ]
+    },
+    {
+      "id": "automatic-5a45136273b549f39c2cdfff12f7e532",
+      "name": "Digital brochure maintenance workflow",
+      "source": "organization",
+      "category": "Operations & coordination",
+      "description": "Work coordinating updates to digital brochure media and tracking related tasks.",
+      "tags": [
+        "Digital media",
+        "Workflow coordination"
+      ]
+    },
+    {
+      "id": "automatic-0b7953b4e3c74efe8c0b33c3792bdd25",
+      "name": "Production equipment output report",
+      "source": "organization",
+      "category": "Operational reporting",
+      "description": "An Excel reporting workbook for reviewing output by production equipment.",
+      "tags": [
+        "Excel",
+        "VBA",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "automatic-aa68083784704c0b948eccdf0d2f5196",
+      "name": "Systems integration security assessment",
+      "source": "organization",
+      "category": "Systems documentation",
+      "description": "An assessment of security evidence and follow-up questions for a business systems integration.",
+      "tags": [
+        "Security review",
+        "Systems integration"
+      ]
+    },
+    {
+      "id": "automatic-53985af89b1744d8b25b685a33df6c89",
+      "name": "Expired materials consumption report",
+      "source": "organization",
+      "category": "Operational reporting",
+      "description": "An Excel reporting workbook for reviewing consumption of expired materials.",
+      "tags": [
+        "Excel",
+        "VBA",
+        "Reporting"
+      ]
     }
   ]
 }
