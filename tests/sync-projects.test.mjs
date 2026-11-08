@@ -76,3 +76,12 @@ test("private summaries reject source URLs, internal mapping fields and duplicat
 test("empty GitHub repositories return no contributor evidence", async () => {
   assert.deepEqual(await fetchRepositories("/repos/example/empty/contributors", async () => ({ ok: true, status: 204 }), ""), []);
 });
+
+test("automatic private entries require fixed generic wording and do not claim human review", () => {
+  const id = "automatic-" + "a".repeat(32);
+  const project = { id, name: "Private software project", source: "organization", category: "Other projects", description: "Contributed to a private software project.", tags: [] };
+  const catalog = item => ({ reviewedAt: "2026-10-07T00:00:00Z", projects: [item] });
+  assert.match(buildPrivateProjects(catalog(project))[0].note, /verified automatically/);
+  assert.throws(() => buildPrivateProjects(catalog({ ...project, description: "Internal detail" })), /Invalid automatic/);
+  assert.throws(() => buildPrivateProjects(catalog({ ...project, tags: ["internal"] })), /Invalid automatic/);
+});

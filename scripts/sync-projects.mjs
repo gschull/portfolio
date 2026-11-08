@@ -76,13 +76,20 @@ export function buildPrivateProjects(catalog) {
       throw new Error("Invalid or duplicate sanitized private-project entry.");
     }
     ids.add(project.id);
+    const automated = /^automatic-[a-f0-9]{32}$/.test(project.id);
+    if (automated && (project.name !== "Private software project" ||
+        project.description !== "Contributed to a private software project." ||
+        project.category !== "Other projects" || project.tags.length !== 0 ||
+        project.note !== undefined || project.featured === true)) {
+      throw new Error("Invalid automatic private-project entry.");
+    }
     return {
       ...project,
       owner: project.source === "personal" ? "gschull" : "stl-dev-ops",
       visibility: "private-summary",
       reviewedAt: catalog.reviewedAt,
       featured: project.featured === true,
-      note: [project.note, "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."].filter(Boolean).join(" ")
+      note: automated ? "Contribution verified automatically. Repository details are withheld." : [project.note, "Contribution verified during the private-source review. Internal names, source code, and implementation details are withheld."].filter(Boolean).join(" ")
     };
   });
 }
