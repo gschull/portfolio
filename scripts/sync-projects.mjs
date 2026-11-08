@@ -77,9 +77,11 @@ export function buildPrivateProjects(catalog) {
     }
     ids.add(project.id);
     const automated = /^automatic-[a-f0-9]{32}$/.test(project.id);
-    if (automated && (project.name !== "Private software project" ||
-        project.description !== "Contributed to a private software project." ||
-        project.category !== "Other projects" || project.tags.length !== 0 ||
+    const safeText = value => typeof value === "string" && value.length > 0 && value.length <= 280 &&
+      !/(https?:\/\/|www\.|[\w.+-]+@[\w.-]+\.[a-z]{2,}|[\\/]|```|<[^>]*>)/i.test(value);
+    if (automated && (!safeText(project.name) || project.name.length > 80 ||
+        !safeText(project.description) || !safeText(project.category) ||
+        project.tags.length > 8 || !project.tags.every(safeText) ||
         project.note !== undefined || project.featured === true)) {
       throw new Error("Invalid automatic private-project entry.");
     }

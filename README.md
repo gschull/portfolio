@@ -51,7 +51,7 @@ The refresh fetches all pages of public repositories and contributor lists, incl
 
 API errors fail the refresh visibly and preserve the last snapshot. Public repositories that disappear or become private are removed from the public inventory. Reviewed descriptions do not automatically change when the original README changes.
 
-**Private work requires a deliberate review.** The public workflow never receives a token capable of reading private organization projects, never fetches private source, and never auto-publishes private metadata. When adding or updating private summaries, privately reverify contributions, confirm current disclosure permission, generalize internal identifiers, and update the catalog review date. Remove summaries when authorization changes; changing a repository's visibility cannot automatically revoke an independently reviewed summary.
+**Private work:** The public GitHub workflow never receives a token capable of reading private organization projects. Separately, an owner-authorized local automation can identify newly visible private repositories with verified account-linked commits and draft generalized project summaries. Automated entries use random identifiers and must omit repository names, links, customer information, secrets, and internal identifiers. Basic validation blocks obvious URLs, email addresses, and paths; it cannot guarantee that a generated summary contains no confidential information. Remove summaries when disclosure authorization changes; a visibility change cannot automatically revoke a published summary.
 
 An optional `GH_TOKEN` environment variable can raise GitHub API rate limits locally. Never commit a token. The public workflow uses the repository-scoped GitHub Actions token.
 
