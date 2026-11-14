@@ -6,10 +6,11 @@ const script=readFileSync(new URL("../lead-form.mjs",import.meta.url),"utf8");
 test("assessment is prominent and private form precedes service catalog",()=>{
  assert.match(html,/id="assessment-cta"/);assert.match(html,/id="diagnostic-cta"/);
  assert.ok(html.indexOf('id="project-inquiry"')<html.indexOf('id="services"'));
- assert.match(html,/\$295/);assert.match(html,/Up to two hours of remote investigation/);
+ assert.match(html,/Up to two hours of remote investigation/);
+ assert.doesNotMatch(html,/\$\d|\b(?:prices?|pricing|quotes?|estimates?|fixed-fee|payment)\b/i);
 });
 test("select uses the existing server-supported service code",()=>{
- assert.match(html,/<option value="other">Paid diagnostic \/ something else<\/option>/);
+ assert.match(html,/<option value="other">Diagnostic \/ something else<\/option>/);
  assert.doesNotMatch(html,/<option value="paid-diagnostic">/);
 });
 test("fallback remains accessible without configured backend or Turnstile",()=>{

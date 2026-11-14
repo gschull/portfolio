@@ -6,7 +6,7 @@ Public projects link to their source. Private work is represented by purpose, re
 
 ## Client inquiries and service offerings
 
-The homepage includes three indicative starting-price service offers for scoped remote engineering projects. These prices are not guaranteed quotes: access, licensing, project boundaries, acceptance tests, support, and scheduling must be agreed separately. Do not publish unverified performance metrics or customer claims.
+The homepage describes scoped remote engineering services and invites visitors to discuss their projects. Do not publish unverified performance metrics or customer claims.
 
 The primary contact call to action uses `mailto:glschull@gmail.com` (the address approved by the portfolio owner) with a prefilled project inquiry subject and outline. It opens the visitor's configured email client; no server-side email delivery is provided, and it may not work for visitors who have no mail handler. The address is publicly visible, so it can attract unsolicited messages.
 
