@@ -12,7 +12,7 @@ The primary contact call to action uses `mailto:glschull@gmail.com` (the address
 
 [Open a public project inquiry](https://github.com/gschull/portfolio/issues/new?template=project-inquiry.yml) provides an optional structured GitHub issue form in `.github/ISSUE_TEMPLATE/project-inquiry.yml`. This requires GitHub login and posts **publicly**. Do not request passwords, internal URLs, customer information, personal contact details, or proprietary materials in the issue. Use email or another separately agreed private channel before exchanging confidential specifications.
 
-A future upgrade could replace `mailto:` with a private, spam-protected lead form and consented retention, if desired.
+When the lead backend and Turnstile are configured, the site also offers a private, spam-protected project inquiry form. The email link remains available as a fallback.
 
 ## Contribution scope and privacy
 
