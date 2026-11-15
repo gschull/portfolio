@@ -59,6 +59,7 @@ async function initialize(){
  const submit=document.querySelector("#lead-send");
  let widgetId=null;
  let challengeToken="";
+ let verificationFailed=false;
  let turnstile;
  const requestIds=createRequestIdTracker(()=>crypto.randomUUID());
  // A retry of unchanged details must use the same ID if the first response was lost.
@@ -73,9 +74,9 @@ async function initialize(){
   turnstile=await loadTurnstile(window,document);
   widgetId=turnstile.render("#lead-turnstile",{
    sitekey:config.turnstileSiteKey,action:"lead_inquiry",
-   callback:token=>{challengeToken=token;},
+   callback:token=>{challengeToken=token;verificationFailed=false;if(status.dataset.state==="verification-error"){status.textContent="";status.dataset.state="";}},
    "expired-callback":()=>{challengeToken="";},
-   "error-callback":()=>{challengeToken="";status.textContent="Verification unavailable. Please use email.";}
+   "error-callback":()=>{challengeToken="";verificationFailed=true;status.dataset.state="verification-error";status.textContent="Verification unavailable. Please use the email link below.";}
   });
  }catch{
   shell.hidden=true;
@@ -86,7 +87,7 @@ async function initialize(){
  form.addEventListener("submit",async e=>{
   e.preventDefault();
   if(!form.reportValidity())return;
-  if(!challengeToken){status.dataset.state="error";status.textContent="Complete the anti-spam verification first.";return;}
+  if(!challengeToken){status.dataset.state=verificationFailed?"verification-error":"error";status.textContent=verificationFailed?"Verification unavailable. Please use the email link below.":"Complete the anti-spam verification first.";return;}
   window.dispatchEvent(new CustomEvent("portfolio-analytics",{detail:"inquiry_attempt"}));
   submit.disabled=true;
   status.textContent="Submitting your request...";

@@ -113,7 +113,7 @@ footer { display: flex; justify-content: space-between; gap: 1rem; border-top: 1
 .lead-actions .muted { margin: 0; font-size: .82rem; }
 .lead-status { margin: 0; font-size: .9rem; }
 .lead-status:empty { display: none; }
-.lead-status[data-state="error"] { color: #ffcfbe; }
+.lead-status[data-state="error"], .lead-status[data-state="verification-error"] { color: #ffcfbe; }
 .lead-status[data-state="success"] { color: var(--accent); }
 .lead-form button:disabled { opacity: .6; cursor: progress; }
 @media(max-width:620px) { .lead-form-grid { grid-template-columns: 1fr; } .lead-actions { flex-direction: column; align-items: stretch; } .lead-actions .button { width: 100%; } }
