@@ -22,6 +22,10 @@ export function payload(fields,search,token,requestId){
  return {...values,consent:fields.get("consent")!==null,turnstileToken:token,requestId,
   ...campaignFromSearch(search)};
 }
+export function createRequestIdTracker(makeId){
+ let id="";
+ return {get(){return id||(id=makeId());},reset(){id="";}};
+}
 async function loadTurnstile() {
  if(window.turnstile)return window.turnstile;
  await new Promise((resolve,reject)=>{
@@ -48,6 +52,10 @@ async function initialize(){
  let widgetId=null;
  let challengeToken="";
  let turnstile;
+ const requestIds=createRequestIdTracker(()=>crypto.randomUUID());
+ // A retry of unchanged details must use the same ID if the first response was lost.
+ form.addEventListener("input",()=>requestIds.reset());
+ form.addEventListener("change",()=>requestIds.reset());
  shell.hidden=false; // Turnstile must render into a measurable visible element.
  const assessmentCta=document.querySelector("#assessment-cta");
  const diagnosticCta=document.querySelector("#diagnostic-cta");
@@ -76,7 +84,7 @@ async function initialize(){
   status.textContent="Submitting your request...";
   status.dataset.state="";
   const fields=new FormData(form);
-  const data=payload(fields,window.location.search,challengeToken,crypto.randomUUID());
+  const data=payload(fields,window.location.search,challengeToken,requestIds.get());
   try{
    const resp=await fetch(config.apiBaseUrl+"/api/inquiries",{
     method:"POST",headers:{"content-type":"application/json"},
@@ -84,7 +92,7 @@ async function initialize(){
    });
    const result=await resp.json().catch(()=>({}));
    if(!resp.ok||!result.ok)throw new Error(result.error||"Request could not be submitted");
-   form.reset();
+   form.reset();requestIds.reset();
    status.dataset.state="success";
    status.textContent="Inquiry received. I will reply to the email address provided.";
    window.dispatchEvent(new CustomEvent("portfolio-analytics",{detail:"generate_lead"}));

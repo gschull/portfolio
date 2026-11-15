@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {campaignFromSearch,configured,payload} from "../lead-form.mjs";
+import {campaignFromSearch,configured,payload,createRequestIdTracker} from "../lead-form.mjs";
 test("portfolio campaign tags are validated and have no duplicate parameters",()=>{
  assert.deepEqual(campaignFromSearch("?utm_source=linkedin&utm_campaign=aviator-brand-launch"),{utm_source:"linkedin",utm_campaign:"aviator-brand-launch"});
  assert.deepEqual(campaignFromSearch("?utm_source=first&utm_source=second"),{});
@@ -19,4 +19,13 @@ test("payload includes exactly form fields and source metadata",()=>{
  assert.equal(result.utm_source,"facebook");
  assert.equal(result.message,"Please repair and reconcile the report logic.");
  assert.equal(result.turnstileToken,"verified-turnstile");
+});
+test("retries reuse a request ID until inquiry details change or submission succeeds",()=>{
+ let next=0;
+ const tracker=createRequestIdTracker(()=>`request-${++next}`);
+ assert.equal(tracker.get(),"request-1");
+ assert.equal(tracker.get(),"request-1");
+ tracker.reset();
+ assert.equal(tracker.get(),"request-2");
+ assert.equal(tracker.get(),"request-2");
 });
