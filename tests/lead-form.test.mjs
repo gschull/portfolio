@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {campaignFromSearch,configured,payload,createRequestIdTracker} from "../lead-form.mjs";
+import {campaignFromSearch,configured,payload,createRequestIdTracker,lockInquiryFields} from "../lead-form.mjs";
 test("portfolio campaign tags are validated and have no duplicate parameters",()=>{
  assert.deepEqual(campaignFromSearch("?utm_source=linkedin&utm_campaign=aviator-brand-launch"),{utm_source:"linkedin",utm_campaign:"aviator-brand-launch"});
  assert.deepEqual(campaignFromSearch("?utm_source=first&utm_source=second"),{});
@@ -28,4 +28,11 @@ test("retries reuse a request ID until inquiry details change or submission succ
  tracker.reset();
  assert.equal(tracker.get(),"request-2");
  assert.equal(tracker.get(),"request-2");
+});
+test("inquiry fields stay unchanged while a request is in flight and recover their prior state",()=>{
+ const fields=[{disabled:false},{disabled:true},{disabled:false}];
+ const unlock=lockInquiryFields({querySelectorAll:()=>fields});
+ assert.deepEqual(fields.map(field=>field.disabled),[true,true,true]);
+ unlock();
+ assert.deepEqual(fields.map(field=>field.disabled),[false,true,false]);
 });

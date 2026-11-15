@@ -26,6 +26,12 @@ export function createRequestIdTracker(makeId){
  let id="";
  return {get(){return id||(id=makeId());},reset(){id="";}};
 }
+export function lockInquiryFields(form){
+ const controls=Array.from(form.querySelectorAll("input, select, textarea"));
+ const wasDisabled=controls.map(control=>control.disabled);
+ controls.forEach(control=>{control.disabled=true;});
+ return ()=>controls.forEach((control,index)=>{control.disabled=wasDisabled[index];});
+}
 async function loadTurnstile() {
  if(window.turnstile)return window.turnstile;
  await new Promise((resolve,reject)=>{
@@ -83,9 +89,11 @@ async function initialize(){
   submit.disabled=true;
   status.textContent="Submitting your request...";
   status.dataset.state="";
-  const fields=new FormData(form);
-  const data=payload(fields,window.location.search,challengeToken,requestIds.get());
+  let unlock=()=>{};
   try{
+   const fields=new FormData(form);
+   const data=payload(fields,window.location.search,challengeToken,requestIds.get());
+   unlock=lockInquiryFields(form);
    const resp=await fetch(config.apiBaseUrl+"/api/inquiries",{
     method:"POST",headers:{"content-type":"application/json"},
     body:JSON.stringify(data),signal:AbortSignal.timeout(15000)
@@ -101,7 +109,7 @@ async function initialize(){
    status.textContent=(err.message||"Submission failed")+". Please try again or use the email link.";
    window.dispatchEvent(new CustomEvent("portfolio-analytics",{detail:"inquiry_error"}));
   }finally{
-   submit.disabled=false;challengeToken="";
+   unlock();submit.disabled=false;challengeToken="";
    if(turnstile&&widgetId!==null)turnstile.reset(widgetId);
   }
  });
