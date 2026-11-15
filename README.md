@@ -2,6 +2,8 @@
 
 A responsive engineering portfolio covering **verified contributions** to personal and **stl-dev-ops** projects: desktop applications, production reporting, systems automation, APIs, developer tooling, and research.
 
+**Looking for help with SQL reporting, workflow automation, or systems integration?** Explore the [engineering portfolio](https://gschull.github.io/portfolio/) and its [SQL Server report reconciliation checklist](https://gschull.github.io/portfolio/sql-report-reconciliation.html). To discuss a project, use the portfolio's private inquiry form when available or email [glschull@gmail.com](mailto:glschull@gmail.com). Remote work is available nationwide; in-person meetings are available in Sandy and the Portland metro area.
+
 Public projects link to their source. Private work is represented by purpose, relevant skills, and carefully generalized descriptions, without internal project names, code, private links, credentials, customer information, or infrastructure details.
 
 ## Client inquiries and service offerings
