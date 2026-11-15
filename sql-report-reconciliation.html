@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why SQL Server Reports Don't Match | Garrett Schull</title>
+  <meta name="description" content="A practical checklist for investigating differences between SQL Server reports, spreadsheets, and business systems.">
+  <link rel="canonical" href="https://gschull.github.io/portfolio/sql-report-reconciliation.html">
+  <meta property="og:title" content="Why SQL Server Reports Don't Match">
+  <meta property="og:description" content="A practical checklist for investigating differences between SQL Server reports, spreadsheets, and business systems.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://gschull.github.io/portfolio/sql-report-reconciliation.html">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./analytics.mjs" type="module"></script>
+  <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"eec6bcff2ac356f44f939aefa51b7c76"})});</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="shell navigation"><a class="brand" href="./">gschull<span class="accent"> / engineering</span></a><nav aria-label="Main navigation"><a href="./#services">Services</a><a href="./#projects">Projects</a><a href="./#contact">Contact</a></nav></header>
+  <main id="main-content" class="shell guide">
+    <p class="eyebrow">SQL SERVER / REPORTING / DATA QUALITY</p>
+    <h1>Why your SQL Server report doesn't match the source system</h1>
+    <p class="intro">When a report and an ERP screen disagree, the gap may come from timing, filters, or how records are combined. Start with a small, repeatable comparison before changing data or rewriting the report.</p>
+    <h2>1. Agree on what the number represents</h2>
+    <p>Write down the metric, date range, time zone, business unit, status filters, and whether the report includes reversals or adjustments. Confirm whether each source uses transaction date, posting date, or another date. Two correct reports can disagree when they answer different questions.</p>
+    <h2>2. Compare the same point in time</h2>
+    <p>Check when each system refreshes and whether either includes unposted or in-flight changes. Record the refresh times and compare the same period. SQL Server isolation settings also affect what a query can see; work with the database owner before changing them. See Microsoft's <a href="https://learn.microsoft.com/en-us/sql/t-sql/statements/set-transaction-isolation-level-transact-sql">transaction isolation documentation</a>.</p>
+    <h2>3. Narrow the discrepancy</h2>
+    <p>Compare totals by day, location, status, or another relevant dimension, then inspect a small set of mismatched record identifiers. Check whether records are missing, duplicated in the result, excluded by a filter, or assigned to a different period. Use approved access and avoid sharing customer records in public examples.</p>
+    <h2>4. Inspect joins and calculations</h2>
+    <p>A one-to-many join can repeat a source amount in the result. Compare row counts and totals before and after each join, and confirm the intended level of detail. Check null handling, rounding, unit conversions, and whether calculations are performed before or after aggregation. A distinct count or a removed duplicate is not automatically a fix; first establish what each row is meant to represent. Microsoft's <a href="https://learn.microsoft.com/en-us/sql/t-sql/functions/count-transact-sql">COUNT reference</a> explains how different count expressions treat rows and null values.</p>
+    <h2>5. Document and validate the fix</h2>
+    <p>Keep a reproducible example with expected totals, record the agreed business rule, and test both the discrepancy and unaffected cases. Coordinate changes with the system owner, use an appropriate test environment, and agree on a handoff so the next person can repeat the checks.</p>
+    <h2>Need help investigating a report?</h2>
+    <p>I help teams investigate SQL Server reporting, data handoffs, and workflow automation. Share a high-level description of the issue without sending passwords, customer records, or internal URLs.</p>
+    <p><a class="button primary" href="./#contact">Discuss a reporting problem &rarr;</a></p>
+    <p><a href="./">Back to the portfolio</a></p>
+  </main>
+  <footer class="shell"><p>gschull / Engineering portfolio</p><p>Metricool provides aggregate site-visit analytics. Optional Google Analytics uses cookies to measure visits and interactions. <button type="button" id="analytics-settings">Analytics choices</button></p></footer>
+  <section id="analytics-consent" class="analytics-consent" aria-label="Analytics choices" hidden>
+    <p>May Google Analytics use cookies to measure visits and interactions? You can change this choice at any time in the footer.</p>
+    <div><button type="button" id="analytics-accept">Allow analytics</button> <button type="button" id="analytics-decline">Decline</button></div>
+  </section>
+</body>
+</html>

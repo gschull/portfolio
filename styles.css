@@ -115,6 +115,10 @@ footer { display: flex; justify-content: space-between; gap: 1rem; border-top: 1
 .lead-status:empty { display: none; }
 .lead-status[data-state="error"], .lead-status[data-state="verification-error"] { color: #ffcfbe; }
 .lead-status[data-state="success"] { color: var(--accent); }
+.guide { max-width: 850px; padding-block: 3rem 5rem; }
+.guide h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+.guide h2 { margin-top: 2.5rem; }
+.guide p { line-height: 1.7; }
 .lead-form button:disabled { opacity: .6; cursor: progress; }
 @media(max-width:620px) { .lead-form-grid { grid-template-columns: 1fr; } .lead-actions { flex-direction: column; align-items: stretch; } .lead-actions .button { width: 100%; } }
 

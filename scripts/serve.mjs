@@ -5,6 +5,7 @@ const root = new URL("../", import.meta.url);
 const routes = new Map([
   ["/", ["index.html", "text/html"]],
   ["/index.html", ["index.html", "text/html"]],
+  ["/sql-report-reconciliation.html", ["sql-report-reconciliation.html", "text/html"]],
   ["/styles.css", ["styles.css", "text/css"]],
   ["/app.js", ["app.js", "text/javascript"]],
   ["/data/projects.json", ["data/projects.json", "application/json"]]
