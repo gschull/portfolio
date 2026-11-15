@@ -1,6 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {campaignFromSearch,configured,payload,createRequestIdTracker,lockInquiryFields} from "../lead-form.mjs";
+import {campaignFromSearch,configured,payload,createRequestIdTracker,lockInquiryFields,loadTurnstile} from "../lead-form.mjs";
+test("a stalled verification script times out so the form can fall back to email",async()=>{
+ let removed=false;
+ const script={remove(){removed=true;}};
+ const doc={createElement:()=>script,head:{appendChild(){}}};
+ await assert.rejects(loadTurnstile({},doc,5),/timed out/);
+ assert.equal(removed,true);
+});
 test("portfolio campaign tags are validated and have no duplicate parameters",()=>{
  assert.deepEqual(campaignFromSearch("?utm_source=linkedin&utm_campaign=aviator-brand-launch"),{utm_source:"linkedin",utm_campaign:"aviator-brand-launch"});
  assert.deepEqual(campaignFromSearch("?utm_source=first&utm_source=second"),{});

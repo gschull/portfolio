@@ -32,15 +32,17 @@ export function lockInquiryFields(form){
  controls.forEach(control=>{control.disabled=true;});
  return ()=>controls.forEach((control,index)=>{control.disabled=wasDisabled[index];});
 }
-async function loadTurnstile() {
- if(window.turnstile)return window.turnstile;
+export async function loadTurnstile(win,doc,timeoutMs=12000) {
+ if(win.turnstile)return win.turnstile;
  await new Promise((resolve,reject)=>{
-  const script=document.createElement("script");
+  const script=doc.createElement("script");
+  const timer=setTimeout(()=>{script.remove();reject(new Error("Turnstile timed out"));},timeoutMs);
+  const finish=callback=>()=>{clearTimeout(timer);callback();};
   script.src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
-  script.async=true;script.onload=resolve;script.onerror=reject;document.head.appendChild(script);
+  script.async=true;script.onload=finish(resolve);script.onerror=finish(()=>reject(new Error("Turnstile unavailable")));doc.head.appendChild(script);
  });
- if(!window.turnstile)throw new Error("Turnstile unavailable");
- return window.turnstile;
+ if(!win.turnstile)throw new Error("Turnstile unavailable");
+ return win.turnstile;
 }
 async function initialize(){
  const shell=document.querySelector("#project-inquiry");
@@ -68,7 +70,7 @@ async function initialize(){
  for(const link of [assessmentCta,diagnosticCta]){ if(link)link.href="#project-inquiry"; }
 
  try{
-  turnstile=await loadTurnstile();
+  turnstile=await loadTurnstile(window,document);
   widgetId=turnstile.render("#lead-turnstile",{
    sitekey:config.turnstileSiteKey,action:"lead_inquiry",
    callback:token=>{challengeToken=token;},
