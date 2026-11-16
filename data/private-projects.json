@@ -1280,6 +1280,31 @@
         "VBA",
         "Reporting"
       ]
+    },
+    {
+      "id": "automatic-142b2c6624cf9740b8f1cbfc6410f235",
+      "source": "personal",
+      "name": "Public information research automation",
+      "category": "Research tools",
+      "description": "An experimental system that organizes analysis of publicly available information and records structured research decisions.",
+      "tags": [
+        "JavaScript",
+        "Research",
+        "Automation"
+      ]
+    },
+    {
+      "id": "automatic-74b1c9cf82701301e496797c78f4d8ea",
+      "source": "organization",
+      "name": "Operational reporting and variance analysis",
+      "category": "Business reporting",
+      "description": "An Excel and SQL reporting project that compares operational measures with estimates and supports filtering and investigation of reporting differences.",
+      "tags": [
+        "Excel",
+        "VBA",
+        "SQL",
+        "Reporting"
+      ]
     }
   ]
 }
